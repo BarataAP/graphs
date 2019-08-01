@@ -6,6 +6,10 @@ Should work fine on Jupyter notebook / Jupyterlab
 
 If you have Anaconda installed, all dependencies should be accounted for.
 
-<figure>
-  <iframe src="liacs.leidenuniv.nl/~pereirabarataap/temp-plot.html"> </iframe>
+
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
+<!-- blank line -->
