@@ -44,7 +44,6 @@ def plot_graph(graph=nx.tutte_graph(), layout=nx.kamada_kawai_layout):
         node_degree = d_cents[node]
         node_closeness = c_cents[node]
         node_betweeness = b_cents[node]
-        
         node_degrees.append(node_degree)
         node_closenesses.append(node_closeness)
         node_betweenesses.append(node_betweeness)
@@ -57,10 +56,6 @@ def plot_graph(graph=nx.tutte_graph(), layout=nx.kamada_kawai_layout):
         marker=dict(
             opacity=1,
             showscale=True,
-            # colorscale options
-            #'Greys' | 'YlGnBu' | 'Greens' | 'YlOrRd' | 'Bluered' | 'RdBu' |
-            #'Reds' | 'Blues' | 'Picnic' | 'Rainbow' | 'Portland' | 'Jet' |
-            #'Hot' | 'Blackbody' | 'Earth' | 'Electric' | 'Viridis' |
             colorscale='Jet',
             reversescale=False,
             color=[],
@@ -80,10 +75,8 @@ def plot_graph(graph=nx.tutte_graph(), layout=nx.kamada_kawai_layout):
     node_degrees = np.array(node_degrees)
     node_closenesses = np.array(node_closenesses)
     node_betweenesses = np.array(node_betweenesses)
-    
     size_scaler = MMS(feature_range=(7.5, 17.5))
     node_betweenesses = size_scaler.fit_transform(node_betweenesses.reshape(-1,1)).ravel()
-    
     node_trace.marker.color = node_closenesses
     node_trace.marker.size = node_betweenesses
     node_trace.text = node_texts
@@ -94,18 +87,10 @@ def plot_graph(graph=nx.tutte_graph(), layout=nx.kamada_kawai_layout):
         ],
         layout=go.Layout(
             autosize=True,
-            #height=750,
-            #width=800,
-            #title='<br>Network graph made with Python',
             titlefont_size=16,
             showlegend=False,
             hovermode='closest',
             margin=dict(b=20,l=5,r=5,t=40),
-            #annotations=[ dict(
-            #    text="Python code: <a href='https://plot.ly/ipython-notebooks/network-graphs/'> https://plot.ly/ipython-notebooks/network-graphs/</a>",
-            #    showarrow=False,
-            #    xref="paper", yref="paper",
-            #    x=0.005, y=-0.002 ) ],
             xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
             yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
         )
