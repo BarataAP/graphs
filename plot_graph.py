@@ -1,9 +1,5 @@
-import xmltodict
 import numpy as np
-import pandas as pd
 import networkx as nx
-from tqdm import tqdm_notebook
-from copy import deepcopy as copy
 import plotly.graph_objects as go
 from plotly.offline import init_notebook_mode, iplot
 from sklearn.preprocessing import MinMaxScaler as MMS
