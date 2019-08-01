@@ -1,6 +1,8 @@
 # graphs
 networkx_plotly
 
+https://barataap.github.io/graphs/
+
 plot_graph function to plot graphs :b
 Should work fine on Jupyter notebook / Jupyterlab
 
