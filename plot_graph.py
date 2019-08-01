@@ -7,9 +7,9 @@ init_notebook_mode(connected=True)
 
 def plot_graph(graph=nx.tutte_graph(), layout=nx.kamada_kawai_layout):
     """
-    Make plotly visualization of network where:
-        node size -> betweeness centrality
-        node color -> closeness centrality
+    Make plotly visualization of networkx graph.
+    node_size -> betweeness centrality
+    node_color -> closeness centrality
     """
     b_cents = nx.betweenness_centrality(graph)
     c_cents = nx.closeness_centrality(graph)
