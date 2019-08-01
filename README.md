@@ -7,9 +7,5 @@ Should work fine on Jupyter notebook / Jupyterlab
 If you have Anaconda installed, all dependencies should be accounted for.
 
 
+ <iframe width="500" height="500" src="https://www.youtube.com/embed/enMumwvLAug"></iframe>
 
-<!-- blank line -->
-<figure class="video_container">
-  <iframe width="500" height="500" src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-<!-- blank line -->
