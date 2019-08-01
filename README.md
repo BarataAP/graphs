@@ -7,5 +7,5 @@ Should work fine on Jupyter notebook / Jupyterlab
 If you have Anaconda installed, all dependencies should be accounted for.
 
 
- <iframe width='500' height='500' src='https://www.youtube.com/embed/enMumwvLAug'></iframe>
+ <iframe src="http://liacs.leidenuniv.nl/~pereirabarataap/temp-plot.html"></iframe>
 
