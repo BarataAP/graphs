@@ -5,10 +5,10 @@ from plotly.offline import init_notebook_mode, iplot
 from sklearn.preprocessing import MinMaxScaler as MMS
 init_notebook_mode(connected=True)
 
-def plot_graph(graph=nx.random_geometric_graph(50, radius=6), layout=nx.kamada_kawai_layout):
-    b_cents = nx.betweenness_centrality(G)
-    c_cents = nx.closeness_centrality(G)
-    d_cents = G.degree()
+def plot_graph(graph=nx.tutte_graph(), layout=nx.kamada_kawai_layout):
+    b_cents = nx.betweenness_centrality(graph)
+    c_cents = nx.closeness_centrality(graph)
+    d_cents = graph.degree()
     edge_x = []
     edge_y = []
     pos = layout(graph)
@@ -43,7 +43,7 @@ def plot_graph(graph=nx.random_geometric_graph(50, radius=6), layout=nx.kamada_k
         node_degrees.append(node_degree)
         node_closenesses.append(node_closeness)
         node_betweenesses.append(node_betweeness)
-        node_text = node + "<br>" + str(node_degree)
+        node_text = str(node) + "<br>Degree: " + str(node_degree)
         node_texts.append(node_text)
     node_trace = go.Scatter(
         x=node_x, y=node_y,
