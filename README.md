@@ -10,6 +10,6 @@ If you have Anaconda installed, all dependencies should be accounted for.
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe width="500" height="500" src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
