@@ -6,4 +6,4 @@ Should work fine on Jupyter notebook / Jupyterlab
 
 If you have Anaconda installed, all dependencies should be accounted for.
 
-<iframe src="http://liacs.leidenuniv.nl/~pereirabarataap/temp-plot.html"></iframe>
+<iframe src="liacs.leidenuniv.nl/~pereirabarataap/temp-plot.html"></iframe>
